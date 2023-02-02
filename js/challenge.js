@@ -24,8 +24,14 @@ function decrease(){
 
 function heart(){
     
+    const likeContainer = document.querySelector(".likes")
+    const newLike = document.createElement("li")
+    const likedText = `${count} has been liked `
+    newLike.textContent = likedText
+    likeContainer.append(newLike)
 }
 
+heartButton.addEventListener("click",heart)
 
 plusButton.addEventListener("click",increment)
     alert("I was clicked")
